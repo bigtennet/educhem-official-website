@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Download Chemistry lesson notes, exam prep materials, tutorials, and infographics from EduChem with Ajibola. Resources for WAEC, JAMB, and SSCE Chemistry preparation.">
+    <meta name="keywords" content="Chemistry lesson notes, WAEC Chemistry, JAMB Chemistry, Chemistry exam prep, Chemistry tutorials, Chemistry resources Nigeria">
+    <meta name="author" content="Ajibola Machado">
+    <title>Resources - EduChem with Ajibola</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-flask"></i>
+                    <span>EduChem with Ajibola</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resources.html" class="active">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon" id="themeIcon"></i>
+                    </button>
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Chemistry Resources</h1>
+            <p>Download lesson notes, exam prep materials, tutorials, and more</p>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="resources-filter">
+        <div class="container">
+            <div class="filter-wrapper">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Search resources by topic, exam type, or keyword...">
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All Resources</button>
+                    <button class="filter-btn" data-filter="notes">Lesson Notes</button>
+                    <button class="filter-btn" data-filter="exam">Exam Prep</button>
+                    <button class="filter-btn" data-filter="tutorial">Tutorials</button>
+                    <button class="filter-btn" data-filter="infographic">Infographics</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="resources-section">
+        <div class="container" id="resourcesContainer">
+            <div style="text-align: center; padding: 2rem;">
+                <i class="fas fa-spinner fa-spin" style="font-size: 2rem; color: var(--primary-color);"></i>
+                <p>Loading resources...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section Template (Hidden) -->
+    <section class="resources-section" style="display: none;">
+        <div class="container">
+            <!-- Lesson Notes Category -->
+            <div class="resource-category" data-category="notes">
+                <div class="category-header">
+                    <i class="fas fa-file-pdf"></i>
+                    <h2>PDF Lesson Notes</h2>
+                    <p>Comprehensive Chemistry lesson notes covering key topics and concepts</p>
+                </div>
+                <div class="resources-grid">
+                    <div class="resource-card" data-tags="notes rate reaction chemical bonding">
+                        <div class="resource-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3>Rate of Reaction</h3>
+                        <p>Complete lesson notes on reaction rates, factors affecting rates, and calculations.</p>
+                        <div class="resource-meta">
+                            <span class="resource-type">PDF</span>
+                            <span class="resource-size">2.5 MB</span>
+                        </div>
+                        <a href="#" class="btn btn-download">
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                    <div class="resource-card" data-tags="notes chemical bonding ionic covalent">
+                        <div class="resource-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3>Chemical Bonding</h3>
+                        <p>Detailed notes on ionic, covalent, and metallic bonding with examples and diagrams.</p>
+                        <div class="resource-meta">
+                            <span class="resource-type">PDF</span>
+                            <span class="resource-size">3.1 MB</span>
+                        </div>
+                        <a href="#" class="btn btn-download">
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                    <div class="resource-card" data-tags="notes organic chemistry hydrocarbons">
+                        <div class="resource-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3>Organic Chemistry Basics</h3>
+                        <p>Introduction to organic compounds, hydrocarbons, and functional groups.</p>
+                        <div class="resource-meta">
+                            <span class="resource-type">PDF</span>
+                            <span class="resource-size">2.8 MB</span>
+                        </div>
+                        <a href="#" class="btn btn-download">
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                    <div class="resource-card" data-tags="notes acids bases salts">
+                        <div class="resource-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3>Acids, Bases, and Salts</h3>
+                        <p>Comprehensive guide to acids, bases, pH scale, and salt formation.</p>
+                        <div class="resource-meta">
+                            <span class="resource-type">PDF</span>
+                            <span class="resource-size">2.2 MB</span>
+                        </div>
+                        <a href="#" class="btn btn-download">
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                    <div class="resource-card" data-tags="notes periodic table elements">
+                        <div class="resource-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3>Periodic Table and Elements</h3>
+                        <p>Understanding the periodic table, trends, and properties of elements.</p>
+                        <div class="resource-meta">
+                            <span class="resource-type">PDF</span>
+                            <span class="resource-size">2.9 MB</span>
+                        </div>
+                        <a href="#" class="btn btn-download">
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                    <div class="resource-card" data-tags="notes stoichiometry calculations">
+                        <div class="resource-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3>Stoichiometry and Calculations</h3>
+                        <p>Step-by-step guide to mole calculations, balancing equations, and stoichiometry.</p>
+                        <div class="resource-meta">
+                            <span class="resource-type">PDF</span>
+                            <span class="resource-size">3.3 MB</span>
+                        </div>
+                        <a href="#" class="btn btn-download">
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exam Prep Materials Category -->
+            <div class="resource-category" data-category="exam">
+                <div class="category-header">
+                    <i class="fas fa-clipboard-check"></i>
+                    <h2>Exam Preparation Materials</h2>
+                    <p>Comprehensive exam prep resources for WAEC, JAMB, and SSCE</p>
+                </div>
+                <div class="resources-grid">
+                    <div class="resource-card" data-tags="exam waec past questions">
+                        <div class="resource-icon">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <h3>WAEC Chemistry Past Questions</h3>
+                        <p>Collection of WAEC Chemistry past questions with detailed solutions (2018-2023).</p>
+                        <div class="resource-meta">
+                            <span class="resource-type">PDF</span>
+                            <span class="resource-size">5.2 MB</span>
+                        </div>
+                        <a href="#" class="btn btn-download">
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                    <div class="resource-card" data-tags="exam jamb practice">
+                        <div class="resource-icon">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <h3>JAMB Chemistry Practice Tests</h3>
+                        <p>JAMB-style practice questions with answer keys and explanations.</p>
+                        <div class="resource-meta">
+                            <span class="resource-type">PDF</span>
+                            <span class="resource-size">4.8 MB</span>
+                        </div>
+                        <a href="#" class="btn btn-download">
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                    <div class="resource-card" data-tags="exam ssce revision">
+                        <div class="resource-icon">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <h3>SSCE Chemistry Revision Guide</h3>
+                        <p>Complete revision guide covering all SSCE Chemistry topics with key points.</p>
+                        <div class="resource-meta">
+                            <span class="resource-type">PDF</span>
+                            <span class="resource-size">6.1 MB</span>
+                        </div>
+                        <a href="#" class="btn btn-download">
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                    <div class="resource-card" data-tags="exam waec syllabus">
+                        <div class="resource-icon">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <h3>WAEC Chemistry Syllabus Breakdown</h3>
+                        <p>Detailed breakdown of WAEC Chemistry syllabus with topic-by-topic coverage.</p>
+                        <div class="resource-meta">
+                            <span class="resource-type">PDF</span>
+                            <span class="resource-size">1.9 MB</span>
+                        </div>
+                        <a href="#" class="btn btn-download">
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tutorials Category -->
+            <div class="resource-category" data-category="tutorial">
+                <div class="category-header">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h2>EduChem Slides & Tutorials</h2>
+                    <p>Interactive slides and tutorial materials for visual learning</p>
+                </div>
+                <div class="resources-grid">
+                    <div class="resource-card" data-tags="tutorial slides presentation">
+                        <div class="resource-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3>Chemical Reactions Tutorial</h3>
+                        <p>Interactive slides covering types of chemical reactions with animations.</p>
+                        <div class="resource-meta">
+                            <span class="resource-type">PPTX</span>
+                            <span class="resource-size">8.5 MB</span>
+                        </div>
+                        <a href="#" class="btn btn-download">
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                    <div class="resource-card" data-tags="tutorial slides atomic structure">
+                        <div class="resource-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3>Atomic Structure Tutorial</h3>
+                        <p>Visual tutorial on atomic structure, electron configuration, and orbitals.</p>
+                        <div class="resource-meta">
+                            <span class="resource-type">PPTX</span>
+                            <span class="resource-size">7.2 MB</span>
+                        </div>
+                        <a href="#" class="btn btn-download">
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                    <div class="resource-card" data-tags="tutorial slides electrochemistry">
+                        <div class="resource-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3>Electrochemistry Slides</h3>
+                        <p>Comprehensive slides on electrolysis, cells, and electrochemical processes.</p>
+                        <div class="resource-meta">
+                            <span class="resource-type">PPTX</span>
+                            <span class="resource-size">9.1 MB</span>
+                        </div>
+                        <a href="#" class="btn btn-download">
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Infographics Category -->
+            <div class="resource-category" data-category="infographic">
+                <div class="category-header">
+                    <i class="fas fa-chart-bar"></i>
+                    <h2>Educational Infographics</h2>
+                    <p>Visual learning aids and infographics for quick reference</p>
+                </div>
+                <div class="resources-grid">
+                    <div class="resource-card" data-tags="infographic periodic table visual">
+                        <div class="resource-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>Periodic Table Infographic</h3>
+                        <p>Colorful, easy-to-read periodic table with key information for each element.</p>
+                        <div class="resource-meta">
+                            <span class="resource-type">PNG</span>
+                            <span class="resource-size">1.2 MB</span>
+                        </div>
+                        <a href="#" class="btn btn-download">
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                    <div class="resource-card" data-tags="infographic reaction types">
+                        <div class="resource-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>Types of Chemical Reactions</h3>
+                        <p>Visual guide to synthesis, decomposition, single and double displacement reactions.</p>
+                        <div class="resource-meta">
+                            <span class="resource-type">PNG</span>
+                            <span class="resource-size">0.9 MB</span>
+                        </div>
+                        <a href="#" class="btn btn-download">
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                    <div class="resource-card" data-tags="infographic organic compounds">
+                        <div class="resource-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>Organic Compounds Overview</h3>
+                        <p>Infographic showing major classes of organic compounds and their structures.</p>
+                        <div class="resource-meta">
+                            <span class="resource-type">PNG</span>
+                            <span class="resource-size">1.5 MB</span>
+                        </div>
+                        <a href="#" class="btn btn-download">
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                    <div class="resource-card" data-tags="infographic lab safety">
+                        <div class="resource-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>Laboratory Safety Guide</h3>
+                        <p>Essential safety rules and guidelines for Chemistry laboratory work.</p>
+                        <div class="resource-meta">
+                            <span class="resource-type">PNG</span>
+                            <span class="resource-size">0.8 MB</span>
+                        </div>
+                        <a href="#" class="btn btn-download">
+                            <i class="fas fa-download"></i> Download
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need More Resources?</h2>
+                <p>Contact us for custom lesson materials or request specific Chemistry topics</p>
+                <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-flask"></i> EduChem with Ajibola</h3>
+                    <p>Making Chemistry Exciting Again</p>
+                    <div class="social-links">
+                        <a href="https://youtube.com/@ajibolamachado?si=HLrzj25eA4pclRpQ" target="_blank" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@mrpresident473?_r=1&_t=ZS-91GakenOVNt" target="_blank" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://whatsapp.com/dl/" target="_blank" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="resources.html">Lesson Notes</a></li>
+                        <li><a href="resources.html">Exam Prep Materials</a></li>
+                        <li><a href="resources.html">Tutorials</a></li>
+                        <li><a href="resources.html">Infographics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> 09063146614</li>
+                        <li><i class="fas fa-envelope"></i> educhemwithajibola@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EduChem with Ajibola. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/tracker.js"></script>
+</body>
+</html>
+

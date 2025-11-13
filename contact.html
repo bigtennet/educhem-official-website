@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact EduChem with Ajibola - Get in touch for Chemistry lessons, inquiries, or support. Phone, email, WhatsApp, and social media links.">
+    <meta name="keywords" content="Contact EduChem, Chemistry teacher contact, Ajibola contact, Chemistry lessons Nigeria">
+    <meta name="author" content="Ajibola Machado">
+    <title>Contact Us - EduChem with Ajibola</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-flask"></i>
+                    <span>EduChem with Ajibola</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon" id="themeIcon"></i>
+                    </button>
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p>We'd love to hear from you. Reach out for lessons, inquiries, or support</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p>Choose your preferred method to reach us. We're here to help with your Chemistry learning journey.</p>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Phone</h3>
+                                <a href="tel:09063146614">09063146614</a>
+                                <p>Call us for immediate assistance</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <a href="mailto:educhemwithajibola@gmail.com">educhemwithajibola@gmail.com</a>
+                                <p>Send us an email anytime</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>WhatsApp</h3>
+                                <a href="https://whatsapp.com/dl/" target="_blank">Chat with us on WhatsApp</a>
+                                <p>Quick responses via WhatsApp</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-media-section">
+                        <h3>Follow Us on Social Media</h3>
+                        <p>Stay connected and get the latest Chemistry content</p>
+                        <div class="social-links-large">
+                            <a href="https://youtube.com/@ajibolamachado?si=HLrzj25eA4pclRpQ" class="social-link youtube" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                                <span>YouTube</span>
+                            </a>
+                            <a href="https://www.tiktok.com/@mrpresident473?_r=1&_t=ZS-91GakenOVNt" class="social-link tiktok" target="_blank">
+                                <i class="fab fa-tiktok"></i>
+                                <span>TikTok</span>
+                            </a>
+                            <a href="https://whatsapp.com/dl/" class="social-link whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you as soon as possible</p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name <span>*</span></label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Your Email <span>*</span></label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="What is this regarding?">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message <span>*</span></label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell us how we can help you..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                        
+                        <p class="form-note">* Required fields</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> How do I join your Chemistry class?</h3>
+                    <p>You can contact us via phone, email, or WhatsApp to inquire about class schedules and enrollment. We offer both online and in-person sessions.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> Are the resources free to download?</h3>
+                    <p>Yes! Most of our educational resources are available for free download. Some premium materials may require enrollment in our classes.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> Do you offer exam preparation courses?</h3>
+                    <p>Absolutely! We provide comprehensive exam preparation for WAEC, JAMB, and SSCE. Our courses are designed to help you excel in your Chemistry exams.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-question-circle"></i> Can I request specific Chemistry topics?</h3>
+                    <p>Yes, we welcome topic requests! Contact us with the topics you'd like to see covered, and we'll do our best to create content for them.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-flask"></i> EduChem with Ajibola</h3>
+                    <p>Making Chemistry Exciting Again</p>
+                    <div class="social-links">
+                        <a href="https://youtube.com/@ajibolamachado?si=HLrzj25eA4pclRpQ" target="_blank" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@mrpresident473?_r=1&_t=ZS-91GakenOVNt" target="_blank" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://whatsapp.com/dl/" target="_blank" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="resources.html">Lesson Notes</a></li>
+                        <li><a href="resources.html">Exam Prep Materials</a></li>
+                        <li><a href="resources.html">Tutorials</a></li>
+                        <li><a href="resources.html">Infographics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> 09063146614</li>
+                        <li><i class="fas fa-envelope"></i> educhemwithajibola@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EduChem with Ajibola. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/tracker.js"></script>
+</body>
+</html>
+

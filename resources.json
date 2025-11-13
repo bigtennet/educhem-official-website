@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "category": "notes",
+        "title": "Rate of Reaction",
+        "description": "Complete lesson notes on reaction rates, factors affecting rates, and calculations.",
+        "type": "PDF",
+        "size": "2.5 MB",
+        "downloadUrl": "#",
+        "tags": ["notes", "rate", "reaction", "chemical bonding"]
+    },
+    {
+        "id": 2,
+        "category": "notes",
+        "title": "Chemical Bonding",
+        "description": "Detailed notes on ionic, covalent, and metallic bonding with examples and diagrams.",
+        "type": "PDF",
+        "size": "3.1 MB",
+        "downloadUrl": "#",
+        "tags": ["notes", "chemical bonding", "ionic", "covalent"]
+    },
+    {
+        "id": 3,
+        "category": "exam",
+        "title": "WAEC Chemistry Past Questions",
+        "description": "Collection of WAEC Chemistry past questions with detailed solutions (2018-2023).",
+        "type": "PDF",
+        "size": "5.2 MB",
+        "downloadUrl": "#",
+        "tags": ["exam", "waec", "past questions"]
+    }
+]

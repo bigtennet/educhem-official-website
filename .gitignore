@@ -1,0 +1,40 @@
+# Sensitive files
+config.php
+*.env
+.env
+
+# JSON data files (contain user data)
+email-list.json
+visitors.json
+# Keep resources.json as it's part of the app structure
+
+# Temporary files
+/tmp/
+*.tmp
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Node modules (if any)
+node_modules/
+package-lock.json
+
+# Build files
+dist/
+build/
